@@ -42,6 +42,7 @@ _My capstone project at Epicodus._
 * 1:54pm - recover from BSOD while installing Firebase to test project
 * 2:15pm - sanity break
 * 2:30pm - continue practicing with firebase and firestore
+* 3:00pm - continue practice, if all goes well I'll be doing the project in React/Firestore instead of Ruby/Rails
 
 ## License - [MIT](https://opensource.org/licenses/MIT)
 
