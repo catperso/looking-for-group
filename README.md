@@ -36,6 +36,7 @@ _My capstone project at Epicodus._
 * 9:00am - Initialize README.md, begin recap/research on the steps to building a react app from scratch
 * 9:45am - Break to apply for a job
 * 10:30am - WIP rudimentary planning of component and database structure
+* 11:30am - lunch break
 
 ## License - [MIT](https://opensource.org/licenses/MIT)
 
