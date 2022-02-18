@@ -33,7 +33,8 @@ _My capstone project at Epicodus._
 #### Friday, 02/18
 * 8:20am - Finish up React + Redux classwork
 * 8:45am - Initialize local and remote project repositories
-* 9:00am - Initialize README.md
+* 9:00am - Initialize README.md, begin recap/research on the steps to building a react app from scratch
+* 9:45am - Break to apply for a job
 
 ## License - [MIT](https://opensource.org/licenses/MIT)
 
