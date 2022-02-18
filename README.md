@@ -41,6 +41,7 @@ _My capstone project at Epicodus._
 * 1:00pm - research on using Firebase
 * 1:54pm - recover from BSOD while installing Firebase to test project
 * 2:15pm - sanity break
+* 2:30pm - continue practicing with firebase and firestore
 
 ## License - [MIT](https://opensource.org/licenses/MIT)
 
