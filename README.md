@@ -38,6 +38,7 @@ _My capstone project at Epicodus._
 * 10:30am - WIP rudimentary planning of component and database structure
 * 11:30am - lunch break
 * 12:30pm - researching on using persistent databases with react
+* 1:00pm - research on using Firebase
 
 ## License - [MIT](https://opensource.org/licenses/MIT)
 
