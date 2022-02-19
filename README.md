@@ -45,6 +45,7 @@ _My capstone project at Epicodus._
 * 3:00pm - continue practice, if all goes well I'll be doing the project in React/Firestore instead of Ruby/Rails
 * 4:10pm - short break
 * 4:30pm - begin work on capstone-proposal.md
+* 4:56pm - complete capstone-proposal.md and submit to epicenter
 
 ## License - [MIT](https://opensource.org/licenses/MIT)
 
