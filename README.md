@@ -54,7 +54,8 @@ _My capstone project at Epicodus._
 * 10:30am - Initialize all component files
 * 11:00am - Research and to-do planning
 * 12:00pm - Lunch Break
-* 1:00 pm - Remember to commit changes; continue recapping redux structure
+* 1:00pm - Remember to commit changes; continue recapping redux structure
+* 2:00pm - Back to coding
 
 ## License - [MIT](https://opensource.org/licenses/MIT)
 
