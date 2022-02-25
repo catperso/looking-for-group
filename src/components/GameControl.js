@@ -10,10 +10,6 @@ import { withFirestore, isLoaded } from 'react-redux-firebase';
 
 class GameControl extends React.Component {
 
-
-
-
-
   render(){
     return(
       <h1>Games Here</h1>
@@ -21,9 +17,16 @@ class GameControl extends React.Component {
   }
 }
 
+GameControl.propTypes = {
+  formVisibleOnPage: PropTypes.bool
+};
+
 const mapStateToProps = state => {
   return {
     formVisibleOnPage: state.formVisibleOnPage
   }
 }
 
+GameControl = connect(mapStateToProps)(GameControl);
+
+export default withFirestore(GameControl);
