@@ -50,6 +50,7 @@ _My capstone project at Epicodus._
 * 8:30am - Begin setting up Firebase project
 * 9:00am - Install Firebase and set up .env file
 * 9:20am - Prune extra files from the project and begin setting up reducers and app structure
+* 9:40am - add component-diagram.png
 
 ## License - [MIT](https://opensource.org/licenses/MIT)
 
