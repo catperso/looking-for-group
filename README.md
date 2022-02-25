@@ -46,6 +46,8 @@ _My capstone project at Epicodus._
 * 4:10pm - short break
 * 4:30pm - begin work on capstone-proposal.md
 * 4:56pm - complete capstone-proposal.md and submit to epicenter
+#### Friday, 02/25
+* 8:30am - Begin setting up Firebase project
 
 ## License - [MIT](https://opensource.org/licenses/MIT)
 
