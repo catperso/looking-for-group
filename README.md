@@ -51,6 +51,10 @@ _My capstone project at Epicodus._
 * 9:00am - Install Firebase and set up .env file
 * 9:20am - Prune extra files from the project and begin setting up reducers and app structure
 * 9:40am - add component-diagram.png
+* 10:30am - Initialize all component files
+* 11:00am - Research and to-do planning
+* 12:00pm - Lunch Break
+* 1:00 pm - Remember to commit changes; continue recapping redux structure
 
 ## License - [MIT](https://opensource.org/licenses/MIT)
 
