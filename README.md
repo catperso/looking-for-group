@@ -56,6 +56,7 @@ _My capstone project at Epicodus._
 * 12:00pm - Lunch Break
 * 1:00pm - Remember to commit changes; continue recapping redux structure
 * 2:00pm - Back to coding
+* 4:30pm - Consulting with DMs to finalize what they think the game details pages should look like
 
 ## License - [MIT](https://opensource.org/licenses/MIT)
 
