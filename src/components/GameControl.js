@@ -10,6 +10,33 @@ import { withFirestore, isLoaded } from 'react-redux-firebase';
 
 class GameControl extends React.Component {
 
+  constructor(props) {
+    super(props);
+    this.state = {
+      selectedGame: null,
+      editing: false
+    }
+  }
+
+  handleClick = () => {
+    if (this.state.selectedGame != null) {
+      this.setState({
+        selectedGame: null,
+        editing: false
+      });
+    } else {
+      const { dispatch } = this.props;
+      const action = a.toggleForm();
+      dispatch(action);
+    }
+  }
+
+  handleAddingNewGame = () => {
+    const { dispatch } = this.props;
+    const action = a.toggleForm();
+    dispatch(action);
+  }
+
   render(){
     return(
       <h1>Games Here</h1>
