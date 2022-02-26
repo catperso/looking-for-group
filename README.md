@@ -57,6 +57,7 @@ _My capstone project at Epicodus._
 * 1:00pm - Remember to commit changes; continue recapping redux structure
 * 2:00pm - Back to coding
 * 4:30pm - Consulting with DMs to finalize what they think the game details pages should look like
+* 4:59pm - Submit to Epicenter
 
 ## License - [MIT](https://opensource.org/licenses/MIT)
 
