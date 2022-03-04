@@ -58,6 +58,8 @@ _My capstone project at Epicodus._
 * 2:00pm - Back to coding
 * 4:30pm - Consulting with DMs to finalize what they think the game details pages should look like
 * 4:59pm - Submit to Epicenter
+#### Friday, 03/04
+* 8:30am - Back on the grind
 
 ## License - [MIT](https://opensource.org/licenses/MIT)
 
