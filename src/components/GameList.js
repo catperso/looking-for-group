@@ -22,8 +22,8 @@ function GameList(props){
         {games.map((game) => {
           return <Game 
             whenGameClicked = {props.onGameSelection}
-            gameName = {game.name}
-            gameHost = {game.host}
+            gameName = {game.gameName}
+            gameHost = {game.gameHost}
             id = {game.id}
             key = {game.id}
           />
