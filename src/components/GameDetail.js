@@ -13,7 +13,8 @@ function GameDetail(props){
 
 GameDetail.propTypes = {
   game: PropTypes.object,
-  onClickingDelete: PropTypes.func
+  onClickingDelete: PropTypes.func,
+  onClickingEdit: PropTypes.func
 }
 
 export default GameDetail;

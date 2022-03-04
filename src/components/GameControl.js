@@ -37,9 +37,74 @@ class GameControl extends React.Component {
     dispatch(action);
   }
 
+  handleChangingSelectedGame = (id) => {
+    this.props.firestore.get({collection: 'games', doc: id}).then((game) => {
+      const firestoreGame = {
+        gameName: game.get("gameName"),
+        gameHost: game.get("gameHost"),
+        gameDescription: game.get("gameDescription"),
+        id: game.id
+      }
+      this.setState({selectedGame: firestoreGame});
+    });
+  }
+
+  handleEditClick = () => {
+    this.setState({editing: true});
+  }
+
+  handleEditingGame = () => {
+    this.setState({
+      editing: false
+    });
+  }
+
+  handleDeletingGame = (id) => {
+    this.props.firestore.delete({collection: 'games', doc: id});
+    this.setState({selectedGame: null});
+  }
+
   render(){
+    let currentlyVisibleState = null;
+    let buttonText = null;
+    let buttonDisabled = true;
+    let buttonClass = null;
+    const auth = this.props.firebase.auth();
+
+    if (!isLoaded(auth)) {
+      return(
+        <React.Fragment>
+          <h1>Loading games, please wait</h1>
+        </React.Fragment>
+      );
+    } else {
+      if (auth.currentUser != null) buttonDisabled = false;
+      if (this.state.editing) {
+        currentlyVisibleState = <EditGameForm game={this.state.selectedGame} onEditGame={this.handleEditingGame} />;
+        buttonText = "Return to All Games";
+        buttonClass = "btn btn-warning";
+      } else if (this.state.selectedGame != null) {
+        currentlyVisibleState = <GameDetail game={this.state.selectedGame}
+                                            onClickingDelete={this.handleDeletingGame}
+                                            onClickingEdit={this.handleEditClick} />;
+        buttonText = "Return to All Games";
+        buttonClass = "btn btn-warning";
+      } else if (this.props.formVisibleOnPage) {
+        currentlyVisibleState = <NewGameForm onNewGameCreation={this.handleAddingNewGame} />;
+        buttonText = "Return to All Games";
+        buttonClass = "btn btn-warning";
+      } else {
+        currentlyVisibleState = <GameList onGameSelection={this.handleChangingSelectedGame} />;
+        buttonText = "Host a new game!"
+        buttonClass = "btn btn-success";
+      }
+    }
+
     return(
-      <h1>Games Here</h1>
+      <React.Fragment>
+        {currentlyVisibleState}
+        <button onClick={this.handleClick} className={buttonClass} disabled={buttonDisabled}>{buttonText}</button>
+      </React.Fragment>
     );
   }
 }

@@ -62,6 +62,8 @@ _My capstone project at Epicodus._
 * 8:30am - Back on the grind
 * 10:30am - research on integrating google analytics
 * 11:30am - WIP finish GameControl.js
+* 1:00pm - back from lunch
+* 2:20pm - gamecontrol is functioning!
 
 ## License - [MIT](https://opensource.org/licenses/MIT)
 
