@@ -11,7 +11,8 @@ function EditGameForm(props) {
     event.preventDefault();
     props.onEditGame();
     const propertiesToUpdate = {
-      // game attributes go here
+      gameName: event.target.gameName.value || game.gameName,
+      gameDescription: event.target.gameDescription.value || game.gameDescription
     }
     return firestore.update({collection: 'games', doc: game.id }, propertiesToUpdate);
   }
@@ -20,7 +21,7 @@ function EditGameForm(props) {
     <React.Fragment>
       <ReusableForm 
         formSubmissionHandler={handleEditingGameInFirestore}
-      />
+        buttonText="Submit changes"/>
     </React.Fragment>
   );
 }

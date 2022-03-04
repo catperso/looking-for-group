@@ -15,7 +15,6 @@ function GameList(props){
       </React.Fragment>
     );
   }
-
   if (isLoaded(games)) {
     return(
       <React.Fragment>
@@ -23,6 +22,8 @@ function GameList(props){
         {games.map((game) => {
           return <Game 
             whenGameClicked = {props.onGameSelection}
+            gameName = {game.name}
+            gameHost = {game.host}
             id = {game.id}
             key = {game.id}
           />

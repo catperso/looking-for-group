@@ -11,7 +11,10 @@ function NewGameForm(props){
     props.onNewGameCreation();
     return firestore.collection('games').add(
       {
-        //game attributes go here
+        gameName: event.target.gameName.value,
+        gameHost: "stinky DM",
+        gameDescription: event.target.gameDescription.value,
+        postTime: firestore.FieldValue.serverTimestamp()
       }
     );
   }
@@ -20,7 +23,7 @@ function NewGameForm(props){
     <React.Fragment>
       <ReusableForm 
         formSubmissionHandler={addGameToFirestore}
-      />
+        buttonText="Add your session!"/>
     </React.Fragment>
   );
 }
