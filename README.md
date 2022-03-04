@@ -60,6 +60,7 @@ _My capstone project at Epicodus._
 * 4:59pm - Submit to Epicenter
 #### Friday, 03/04
 * 8:30am - Back on the grind
+* 10:30am - research on integrating google analytics
 
 ## License - [MIT](https://opensource.org/licenses/MIT)
 

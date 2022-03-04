@@ -3,7 +3,7 @@ import firebase from 'firebase/compat/app';
 
 function SignIn(){
 
-  doSignUp = (event) => {
+  function doSignUp(event) {
     event.preventDefault();
     const email = event.target.email.value;
     const password = event.target.password.value;
@@ -14,7 +14,7 @@ function SignIn(){
     });
   }
 
-  doSignIn = (event) => {
+  function doSignIn(event) {
     event.preventDefault();
     const email = event.target.signinEmail.value;
     const password = event.target.signinPassword.value;
@@ -25,7 +25,7 @@ function SignIn(){
     });
   }
 
-  doSignOut = () => {
+  function doSignOut() {
     firebase.auth().signOut().then(function() {
       console.log("Successfully signed out!");
     }).catch(function(error) {
@@ -38,7 +38,7 @@ function SignIn(){
   return(
     <React.Fragment>
       <h1>Sign up</h1>
-      <form onSubmit={this.doSignUp}>
+      <form onSubmit={doSignUp}>
         <input
           type='text'
           name='email'
@@ -50,7 +50,7 @@ function SignIn(){
         <button type='submit'>Sign up</button>
       </form>
       <h1>Sign In</h1>
-      <form onSubmit={this.doSignIn}>
+      <form onSubmit={doSignIn}>
         <input
           type='text'
           name='signinEmail'
@@ -61,7 +61,7 @@ function SignIn(){
           placeholder='Password' />
         <button type='submit'>Sign in</button>
       </form>
-      <button onClick={this.doSignOut}>Sign out</button>
+      <button onClick={doSignOut}>Sign out</button>
     </React.Fragment>
   );
 }
