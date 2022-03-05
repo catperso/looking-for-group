@@ -69,6 +69,7 @@ class GameControl extends React.Component {
     let buttonText = null;
     let buttonDisabled = true;
     let buttonClass = null;
+    let disabledText = "You must be signed in to add a game";
     const auth = this.props.firebase.auth();
 
     if (!isLoaded(auth)) {
@@ -78,7 +79,10 @@ class GameControl extends React.Component {
         </React.Fragment>
       );
     } else {
-      if (auth.currentUser != null) buttonDisabled = false;
+      if (auth.currentUser != null) {
+        buttonDisabled = false;
+        disabledText = null;
+      }
       if (this.state.editing) {
         currentlyVisibleState = <EditGameForm game={this.state.selectedGame} onEditGame={this.handleEditingGame} />;
         buttonText = "Return to All Games";
@@ -103,6 +107,7 @@ class GameControl extends React.Component {
     return(
       <React.Fragment>
         {currentlyVisibleState}
+        <p><em>{disabledText}</em></p>
         <button onClick={this.handleClick} className={buttonClass} disabled={buttonDisabled}>{buttonText}</button>
       </React.Fragment>
     );
