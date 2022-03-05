@@ -64,6 +64,7 @@ _My capstone project at Epicodus._
 * 11:30am - WIP finish GameControl.js
 * 1:00pm - back from lunch
 * 2:20pm - gamecontrol is functioning!
+* 2:30pm -> 4:30pm coding work
 
 ## License - [MIT](https://opensource.org/licenses/MIT)
 
