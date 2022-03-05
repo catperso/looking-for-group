@@ -79,7 +79,7 @@ class GameControl extends React.Component {
         </React.Fragment>
       );
     } else {
-      if (auth.currentUser != null) {
+      if ((auth.currentUser != null) || (this.state.selectedGame != null)) {
         buttonDisabled = false;
         disabledText = null;
       }
