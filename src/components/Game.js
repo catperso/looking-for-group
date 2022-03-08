@@ -8,6 +8,7 @@ function Game(props){
         <h2>{props.gameName}</h2>
         <h3>by - <em>{props.gameHost}</em></h3>
         <p className='gameListTags'>{props.gameTags || "no tags here"}</p>
+        <p className='gameListTime'>{props.postTime}</p>
         <hr/>
       </div>
     </React.Fragment>

@@ -43,6 +43,8 @@ class GameControl extends React.Component {
         gameName: game.get("gameName"),
         gameHost: game.get("gameHost"),
         gameDescription: game.get("gameDescription"),
+        gameTags: game.get("gameTags"),
+        postTime: game.get("postTime").toDate().toDateString(),
         id: game.id
       }
       this.setState({selectedGame: firestoreGame});

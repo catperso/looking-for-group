@@ -43,3 +43,4 @@
 * 11:15am - early lunch
 * 12:15pm - back on the grind
 * 12:50pm - research on how to add tags to firestore entries
+* 1:30pm - implement rudimentary tags and timestamp display

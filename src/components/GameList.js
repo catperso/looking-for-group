@@ -24,6 +24,8 @@ function GameList(props){
             whenGameClicked = {props.onGameSelection}
             gameName = {game.gameName}
             gameHost = {game.gameHost}
+            gameTags = {game.gameTags}
+            postTime = {game.postTime.toDate().toDateString()}
             id = {game.id}
             key = {game.id}
           />

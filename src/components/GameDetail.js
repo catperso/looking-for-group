@@ -1,11 +1,8 @@
 import React from "react";
 import PropTypes from 'prop-types';
-// import { TimeStamp } from 'react-redux-firebase';
 
 function GameDetail(props){
   const { game, onClickingDelete } = props;
-  // console.log(game.postTime.timestamp.toDate());
-  console.log(game.gameTags);
 
   return (
     <React.Fragment>
