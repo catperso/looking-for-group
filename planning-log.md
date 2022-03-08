@@ -38,3 +38,6 @@
 * 8:00am - Begin coding to finalize functionality
 * 9:00am - Job app break
 * 9:10am - Back to the grind
+* 10:10am - Job app break
+* 10:50am - back to the grind
+* 11:15am - early lunch
