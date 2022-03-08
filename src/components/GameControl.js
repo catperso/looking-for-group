@@ -94,7 +94,7 @@ class GameControl extends React.Component {
         buttonText = "Return to All Games";
         buttonClass = "btn btn-warning";
       } else if (this.props.formVisibleOnPage) {
-        currentlyVisibleState = <NewGameForm onNewGameCreation={this.handleAddingNewGame} />;
+        currentlyVisibleState = <NewGameForm onNewGameCreation={this.handleAddingNewGame} gameHost={auth.currentUser.email}/>;
         buttonText = "Return to All Games";
         buttonClass = "btn btn-warning";
       } else {

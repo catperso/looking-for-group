@@ -34,3 +34,7 @@
 * 1:00pm - back from lunch
 * 2:20pm - gamecontrol is functioning!
 * 2:30pm -> 4:30pm coding work
+## Tuesday, 03/08
+* 8:00am - Begin coding to finalize functionality
+* 9:00am - Job app break
+* 9:10am - Back to the grind

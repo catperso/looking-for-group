@@ -12,7 +12,7 @@ function NewGameForm(props){
     return firestore.collection('games').add(
       {
         gameName: event.target.gameName.value,
-        gameHost: "stinky DM",
+        gameHost: props.gameHost,
         gameDescription: event.target.gameDescription.value,
         postTime: firestore.FieldValue.serverTimestamp()
       }
@@ -29,7 +29,8 @@ function NewGameForm(props){
 }
 
 NewGameForm.propTypes = {
-  onNewGameCreation: PropTypes.func
+  onNewGameCreation: PropTypes.func,
+  gameHost: PropTypes.string
 }
 
 export default NewGameForm;
