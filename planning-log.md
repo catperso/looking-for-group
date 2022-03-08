@@ -41,3 +41,5 @@
 * 10:10am - Job app break
 * 10:50am - back to the grind
 * 11:15am - early lunch
+* 12:15pm - back on the grind
+* 12:50pm - research on how to add tags to firestore entries

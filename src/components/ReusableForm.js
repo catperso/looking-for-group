@@ -18,6 +18,12 @@ function ReusableForm(props) {
           placeholder='Describe your game'
           className="form-control"
         />
+        <label>Game Tags</label>
+        <textarea
+          name='gameTags'
+          placeholder='#put #tags #here #with #preceding #hash #separated #by #spaces'
+          className="form-control"
+        />
         <button type='submit' className="btn btn-success">{props.buttonText}</button>
       </form>
       {/* form goes here

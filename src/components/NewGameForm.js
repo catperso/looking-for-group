@@ -14,6 +14,7 @@ function NewGameForm(props){
         gameName: event.target.gameName.value,
         gameHost: props.gameHost,
         gameDescription: event.target.gameDescription.value,
+        gameTags: event.target.gameTags.value,
         postTime: firestore.FieldValue.serverTimestamp()
       }
     );

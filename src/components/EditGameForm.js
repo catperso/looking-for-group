@@ -12,7 +12,8 @@ function EditGameForm(props) {
     props.onEditGame();
     const propertiesToUpdate = {
       gameName: event.target.gameName.value || game.gameName,
-      gameDescription: event.target.gameDescription.value || game.gameDescription
+      gameDescription: event.target.gameDescription.value || game.gameDescription,
+      gameTags: event.target.gameTags.value || game.gameTags
     }
     return firestore.update({collection: 'games', doc: game.id }, propertiesToUpdate);
   }

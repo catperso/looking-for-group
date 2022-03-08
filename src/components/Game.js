@@ -7,6 +7,7 @@ function Game(props){
       <div onClick={() => props.whenGameClicked(props.id)}>
         <h2>{props.gameName}</h2>
         <h3>by - <em>{props.gameHost}</em></h3>
+        <p className='gameListTags'>{props.gameTags || "no tags here"}</p>
         <hr/>
       </div>
     </React.Fragment>
