@@ -71,6 +71,9 @@ class GameControl extends React.Component {
     let buttonClass = null;
     let disabledText = "You must be signed in to add a game";
     const auth = this.props.firebase.auth();
+    let gameDetailCurrentUser = null;
+
+    if (auth.currentUser) gameDetailCurrentUser = auth.currentUser.email;
 
     if (!isLoaded(auth)) {
       return(
@@ -90,7 +93,8 @@ class GameControl extends React.Component {
       } else if (this.state.selectedGame != null) {
         currentlyVisibleState = <GameDetail game={this.state.selectedGame}
                                             onClickingDelete={this.handleDeletingGame}
-                                            onClickingEdit={this.handleEditClick} />;
+                                            onClickingEdit={this.handleEditClick}
+                                            currentUser={gameDetailCurrentUser} />;
         buttonText = "Return to All Games";
         buttonClass = "btn btn-warning";
       } else if (this.props.formVisibleOnPage) {
