@@ -1,8 +1,17 @@
 import React from "react";
 import PropTypes from 'prop-types';
+import { useFirestore } from 'react-redux-firebase';
 
 function GameDetail(props){
+  const firestore = useFirestore();
   const { game, onClickingDelete } = props;
+
+  // function addPlayerToGame() {
+  //   const propertiesToUpdate = {
+  //     gamePlayers: arrayUnion(props.currentUser)
+  //   }
+  //   return firestore.update({collection: 'games', doc: game.id }, propertiesToUpdate);
+  // }
 
   return (
     <React.Fragment>
@@ -22,12 +31,9 @@ function GameDetail(props){
           <h1>Players</h1>
           <hr/>
           <ul className="gameDetailList">
-            <li>Steve Playerson</li>
-            <li>Steve Playerson</li>
-            <li>Steve Playerson</li>
-            <li>Steve Playerson</li>
-            <li>Steve Playerson</li>
-            <li>Steve Playerson</li>
+            {game.gamePlayers.map((player, i) => {
+              return <li key={i}>{player}</li>
+            })}
           </ul>
           <button className="btn btn-success" disabled={props.currentUser === game.gameHost ? true : false}>Join this game!</button>
         </div>
