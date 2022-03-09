@@ -11,3 +11,12 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.gameDetailTitle {
+  text-align: center;
+}
+
+.gameDetailTags {
+  font-style: italic;
+  color: grey;
+}
