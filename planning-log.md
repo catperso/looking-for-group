@@ -48,3 +48,5 @@
 * 3:00pm - job app break
 * 3:15pm -> 4:45pm - back on the research grind
 * 11:30pm - remember to commit
+## Wednesday, 03/09
+* 8:00am - dawn of the final day

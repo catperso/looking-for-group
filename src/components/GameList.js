@@ -18,7 +18,6 @@ function GameList(props){
   if (isLoaded(games)) {
     return(
       <React.Fragment>
-        <hr/>
         {games.map((game) => {
           return <Game 
             whenGameClicked = {props.onGameSelection}

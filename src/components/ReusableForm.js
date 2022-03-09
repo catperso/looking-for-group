@@ -5,32 +5,47 @@ function ReusableForm(props) {
   return (
     <React.Fragment>
       <form onSubmit={props.formSubmissionHandler} className="form-control">
-        <label>Game Name</label>
-        <input 
-          type="text"
-          name='gameName'
-          placeholder='Game Name'
-          className="form-control"
-        />
-        <label>Game Description</label>
-        <textarea 
-          name='gameDescription'
-          placeholder='Describe your game'
-          className="form-control"
-        />
-        <label>Game Tags</label>
-        <textarea
-          name='gameTags'
-          placeholder='#put #tags #here #with #preceding #hash #separated #by #spaces'
-          className="form-control"
-        />
-        <button type='submit' className="btn btn-success">{props.buttonText}</button>
+        <div className="row">
+          <div className="col-6">
+            <label>Game Name</label>
+            <input 
+              type="text"
+              name='gameName'
+              placeholder='Game Name'
+              className="form-control"
+            />
+          </div>
+          <div className="col-6">
+            <label>When will you host the session?</label>
+            <input
+              type='datetime-local'
+              name="gameTime"
+              className="form-control"
+            />
+          </div>
+        </div>
+          <label>Game Description</label>
+          <textarea 
+            name='gameDescription'
+            placeholder='Describe your game'
+            className="form-control"
+          />
+          <label>Game Tags</label>
+          <textarea
+            name='gameTags'
+            placeholder='#put #tags #here #with #preceding #hash #separated #by #spaces'
+            className="form-control"
+          />
+          <label>Game Location</label>
+          <input
+            type='text'
+            name='gameLink'
+            placeholder="Put a link to your discord server, roll20, or wherever the game will be hosted"
+            className="form-control"
+          />
+          <br/>
+          <button type='submit' className="btn btn-success">{props.buttonText}</button>
       </form>
-      {/* form goes here
-      Game Title
-      Game Host = logged in user
-      Game Description and Details
-      Game Tags (things like #curseofstrahd or #icewinddale if using those modules, or anything the host wants) */}
     </React.Fragment>
   );
 }
