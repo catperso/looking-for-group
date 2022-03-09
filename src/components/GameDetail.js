@@ -1,17 +1,35 @@
 import React from "react";
 import PropTypes from 'prop-types';
 import { useFirestore } from 'react-redux-firebase';
+import { arrayUnion, arrayRemove } from 'firebase/firestore';
 
 function GameDetail(props){
   const firestore = useFirestore();
   const { game, onClickingDelete } = props;
+  let addPlayerStyle = null;
+  let removePlayerStyle = {display: 'none'};
 
-  // function addPlayerToGame() {
-  //   const propertiesToUpdate = {
-  //     gamePlayers: arrayUnion(props.currentUser)
-  //   }
-  //   return firestore.update({collection: 'games', doc: game.id }, propertiesToUpdate);
-  // }
+  if ((props.currentUser === game.gameHost) || game.gamePlayers.includes(props.currentUser) || (props.currentUser === null)) {
+    addPlayerStyle = {display: 'none'};
+  } else {
+    addPlayerStyle = {display: 'inline'};
+  }
+
+  if (game.gamePlayers.includes(props.currentUser)) removePlayerStyle = {display: 'inline'};
+
+  function addPlayerToGame(player) {
+    const propertiesToUpdate = {
+      gamePlayers: arrayUnion(player)
+    }
+    return firestore.update({collection: 'games', doc: game.id }, propertiesToUpdate);
+  }
+
+  function removePlayerFromGame(player) {
+    const propertiesToUpdate = {
+      gamePlayers: arrayRemove(player)
+    }
+    return firestore.update({collection: 'games', doc: game.id }, propertiesToUpdate);
+  }
 
   return (
     <React.Fragment>
@@ -35,7 +53,8 @@ function GameDetail(props){
               return <li key={i}>{player}</li>
             })}
           </ul>
-          <button className="btn btn-success" disabled={props.currentUser === game.gameHost ? true : false}>Join this game!</button>
+          <button onClick={() => addPlayerToGame(props.currentUser)} className="btn btn-success" style={addPlayerStyle}>Join this game!</button>
+          <button onClick={() => removePlayerFromGame(props.currentUser)} className='btn btn-danger' style={removePlayerStyle}>Leave this game!</button>
         </div>
       </div>
     </React.Fragment>
