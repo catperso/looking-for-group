@@ -6,9 +6,9 @@ function Game(props){
     <React.Fragment>
       <div onClick={() => props.whenGameClicked(props.id)}>
         <h2>{props.gameName}</h2>
-        <h3>by - <em>{props.gameHost}</em></h3>
+        <h3>DM - <em>{props.gameHost}</em></h3>
         <p className='gameListTags'>{props.gameTags || "no tags here"}</p>
-        <p className='gameListTime'>{props.postTime}</p>
+        <p className='gameListTime'>Game scheduled for: {props.gameTime}</p>
         <hr/>
       </div>
     </React.Fragment>
@@ -18,7 +18,8 @@ function Game(props){
 Game.propTypes = {
   whenGameClicked: PropTypes.func,
   gameName: PropTypes.string,
-  gameHost: PropTypes.string
+  gameHost: PropTypes.string,
+  gameTime: PropTypes.string
 }
 
 export default Game;

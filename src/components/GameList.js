@@ -24,7 +24,7 @@ function GameList(props){
             gameName = {game.gameName}
             gameHost = {game.gameHost}
             gameTags = {game.gameTags}
-            postTime = {game.postTime.toDate().toDateString()}
+            gameTime = {game.gameTime}
             id = {game.id}
             key = {game.id}
           />

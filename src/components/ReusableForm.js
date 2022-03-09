@@ -18,7 +18,7 @@ function ReusableForm(props) {
           <div className="col-6">
             <label>When will you host the session?</label>
             <input
-              type='datetime-local'
+              type='date'
               name="gameTime"
               className="form-control"
             />
