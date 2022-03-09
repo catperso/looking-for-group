@@ -45,3 +45,6 @@
 * 12:50pm - research on how to add tags to firestore entries
 * 1:30pm - implement rudimentary tags and timestamp display
 * 2:00pm - research on firestore entry manipulation
+* 3:00pm - job app break
+* 3:15pm -> 4:45pm - back on the research grind
+* 11:30pm - remember to commit
