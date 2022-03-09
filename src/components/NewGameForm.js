@@ -26,7 +26,13 @@ function NewGameForm(props){
     <React.Fragment>
       <ReusableForm 
         formSubmissionHandler={addGameToFirestore}
-        buttonText="Add your session!"/>
+        buttonText="Add your session!"
+        gameNameValue=''
+        gameTimeValue=''
+        gameDescriptionValue=''
+        gameTagsValue=''
+        gameLinkValue=''
+        />
     </React.Fragment>
   );
 }

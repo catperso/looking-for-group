@@ -13,7 +13,9 @@ function EditGameForm(props) {
     const propertiesToUpdate = {
       gameName: event.target.gameName.value || game.gameName,
       gameDescription: event.target.gameDescription.value || game.gameDescription,
-      gameTags: event.target.gameTags.value || game.gameTags
+      gameTags: event.target.gameTags.value || game.gameTags,
+      gameTime: event.target.gameTime.value || game.gameTime,
+      gameLink: event.target.gameLink.value || game.gameLink
     }
     return firestore.update({collection: 'games', doc: game.id }, propertiesToUpdate);
   }
@@ -22,7 +24,13 @@ function EditGameForm(props) {
     <React.Fragment>
       <ReusableForm 
         formSubmissionHandler={handleEditingGameInFirestore}
-        buttonText="Submit changes"/>
+        buttonText="Submit changes"
+        gameNameValue={game.gameName}
+        gameTimeValue={game.gameTime}
+        gameDescriptionValue={game.gameDescription}
+        gameTagsValue={game.gameTags}
+        gameLinkValue={game.gameLink}
+        />
     </React.Fragment>
   );
 }

@@ -20,3 +20,7 @@ code {
   font-style: italic;
   color: grey;
 }
+
+.gameDescriptionField {
+  height: 200px;
+}
