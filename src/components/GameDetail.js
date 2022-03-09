@@ -15,7 +15,7 @@ function GameDetail(props){
           <h4>Session Date: {game.gameTime}</h4>
           <h4>This session is taking place at: {game.gameLink}</h4>
           <p>{game.gameDescription}</p>
-          <p className="gameDetailTags">{game.gameTags}</p>
+          <p className="gameDetailTags">{game.gameTags.join(' ')}</p>
           <p className="gameDetailTags">posted on {game.postTime}</p>
         </div>
         <div className="col-4 gameDetailPlayerList">

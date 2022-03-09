@@ -13,7 +13,7 @@ function EditGameForm(props) {
     const propertiesToUpdate = {
       gameName: event.target.gameName.value || game.gameName,
       gameDescription: event.target.gameDescription.value || game.gameDescription,
-      gameTags: event.target.gameTags.value || game.gameTags,
+      gameTags: event.target.gameTags.value.split(' ') || game.gameTags,
       gameTime: event.target.gameTime.value || game.gameTime,
       gameLink: event.target.gameLink.value || game.gameLink
     }
@@ -28,7 +28,7 @@ function EditGameForm(props) {
         gameNameValue={game.gameName}
         gameTimeValue={game.gameTime}
         gameDescriptionValue={game.gameDescription}
-        gameTagsValue={game.gameTags}
+        gameTagsValue={game.gameTags.join(' ')}
         gameLinkValue={game.gameLink}
         />
     </React.Fragment>

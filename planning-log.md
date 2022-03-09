@@ -52,4 +52,4 @@
 * 8:00am - dawn of the final day
 * 10:30am - job app break
 * 11:30am - lunch time
-* 12:30pm - work on updating component-diagram.png
+* 12:30pm - back on the grind

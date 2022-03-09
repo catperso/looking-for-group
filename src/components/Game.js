@@ -7,7 +7,7 @@ function Game(props){
       <div onClick={() => props.whenGameClicked(props.id)}>
         <h2>{props.gameName}</h2>
         <h3>DM - <em>{props.gameHost}</em></h3>
-        <p className='gameDetailTags'>{props.gameTags || "no tags here"}</p>
+        <p className='gameDetailTags'>{props.gameTags.join(' ') || "no tags here"}</p>
         <p className='gameDetailTags'>Game scheduled for: {props.gameTime}</p>
         <hr/>
       </div>

@@ -9,6 +9,7 @@ function ReusableForm(props) {
           <div className="col-6">
             <label>Game Name</label>
             <input 
+              required
               type="text"
               name='gameName'
               placeholder='Game Name'
@@ -19,6 +20,7 @@ function ReusableForm(props) {
           <div className="col-6">
             <label>When will you host the session?</label>
             <input
+              required
               type='date'
               name="gameTime"
               className="form-control"
@@ -28,6 +30,7 @@ function ReusableForm(props) {
         </div>
           <label>Game Description</label>
           <textarea 
+            required
             name='gameDescription'
             placeholder="Write a description of what you're planning on running, and what the players will need to bring to the session."
             className="form-control gameDescriptionField"
@@ -35,6 +38,7 @@ function ReusableForm(props) {
           />
           <label>Game Tags</label>
           <textarea
+            required
             name='gameTags'
             placeholder='#put #tags #here #with #preceding #hash #separated #by #spaces'
             className="form-control"
@@ -42,6 +46,7 @@ function ReusableForm(props) {
           />
           <label>Game Location</label>
           <input
+            required
             type='text'
             name='gameLink'
             placeholder="Put a link to your discord server, roll20, or wherever the game will be hosted"
