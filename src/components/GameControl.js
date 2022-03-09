@@ -47,6 +47,7 @@ class GameControl extends React.Component {
         gameLink: game.get("gameLink"),
         gameTime: game.get("gameTime"),
         gamePlayers: game.get("gamePlayers"),
+        gameMaxPlayers: game.get("gameMaxPlayers"),
         postTime: game.get("postTime").toDate().toDateString(),
         id: game.id
       }

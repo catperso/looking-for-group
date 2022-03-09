@@ -44,15 +44,31 @@ function ReusableForm(props) {
             className="form-control"
             defaultValue={props.gameTagsValue}
           />
-          <label>Game Location</label>
-          <input
-            required
-            type='text'
-            name='gameLink'
-            placeholder="Put a link to your discord server, roll20, or wherever the game will be hosted"
-            className="form-control"
-            defaultValue={props.gameLinkValue}
-          />
+          <div className="row">
+            <div className="col-8">
+              <label>Game Location</label>
+              <input
+                required
+                type='text'
+                name='gameLink'
+                placeholder="Put a link to your discord server, roll20, or wherever the game will be hosted"
+                className="form-control"
+                defaultValue={props.gameLinkValue}
+              />
+            </div>
+            <div className="col-4">
+              <label>Max Players</label>
+              <input
+                required
+                type='number'
+                name='gameMaxPlayers'
+                placeholder='The average DND game has 3-6 players'
+                min='1'
+                className="form-control"
+                defaultValue={props.gameMaxPlayersValue}
+              />
+            </div>
+          </div>
           <br/>
           <button type='submit' className="btn btn-success">{props.buttonText}</button>
       </form>

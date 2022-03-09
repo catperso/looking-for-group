@@ -6,6 +6,7 @@
 
 ## Technologies Used
 
+* _NPM/WebPack_
 * _HTML/CSS_
 * _React/Redux_
 * _[Firebase/Firestore](https://firebase.google.com/)_

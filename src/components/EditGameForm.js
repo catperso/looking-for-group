@@ -30,6 +30,7 @@ function EditGameForm(props) {
         gameDescriptionValue={game.gameDescription}
         gameTagsValue={game.gameTags.join(' ')}
         gameLinkValue={game.gameLink}
+        gameMaxPlayersValue={game.gameMaxPlayers}
         />
     </React.Fragment>
   );

@@ -18,6 +18,7 @@ function NewGameForm(props){
         gameLink: event.target.gameLink.value,
         gameTime: event.target.gameTime.value,
         postTime: firestore.FieldValue.serverTimestamp(),
+        gameMaxPlayers: event.target.gameMaxPlayers.value,
         gamePlayers: []
       }
     );
@@ -33,6 +34,7 @@ function NewGameForm(props){
         gameDescriptionValue=''
         gameTagsValue=''
         gameLinkValue=''
+        gameMaxPlayersValue=''
         />
     </React.Fragment>
   );
