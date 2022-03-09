@@ -53,3 +53,4 @@
 * 10:30am - job app break
 * 11:30am - lunch time
 * 12:30pm - back on the grind
+* 3:30pm - smol break

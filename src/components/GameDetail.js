@@ -46,6 +46,7 @@ function GameDetail(props){
           <p className="gameDetailTags">posted on {game.postTime}</p>
         </div>
         <div className="col-4 gameDetailPlayerList">
+          <h5>{game.gamePlayers.length}/{game.gameMaxPlayers}</h5>
           <h1>Players</h1>
           <hr/>
           <ul className="gameDetailList">

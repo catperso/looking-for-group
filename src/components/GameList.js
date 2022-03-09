@@ -25,6 +25,8 @@ function GameList(props){
             gameHost = {game.gameHost}
             gameTags = {game.gameTags}
             gameTime = {game.gameTime}
+            gamePlayers = {game.gamePlayers}
+            gameMaxPlayers = {game.gameMaxPlayers}
             id = {game.id}
             key = {game.id}
           />
