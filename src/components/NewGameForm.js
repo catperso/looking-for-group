@@ -17,7 +17,8 @@ function NewGameForm(props){
         gameTags: event.target.gameTags.value.split(' '),
         gameLink: event.target.gameLink.value,
         gameTime: event.target.gameTime.value,
-        postTime: firestore.FieldValue.serverTimestamp()
+        postTime: firestore.FieldValue.serverTimestamp(),
+        gamePlayers: []
       }
     );
   }
