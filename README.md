@@ -28,7 +28,7 @@ _My capstone project at Epicodus. An MVP for a simple networking site that allow
 
 * _Run `git clone https://github.com/catperso/looking-for-group` from the terminal to clone the project directory to your device._
 * _cd into the looking-for-group directory then run `npm install` from the terminal to set up the environment and install all the npm packages._
-* LINK TO INSTRUCTIONS ON HOW TO START FIREBASE
+* _Follow [these instructions here](https://www.learnhowtoprogram.com/react/react-with-nosql/setting-up-a-firebase-project) to set up a firebase project._
 * _Create a file in the root directory named `.env` and copy the following code into it:_
 ```
 REACT_APP_FIREBASE_API_KEY = "[YOUR-KEY]"
@@ -41,6 +41,7 @@ REACT_APP_FIREBASE_APP_ID = "[YOUR-APP-ID]"
 REACT_APP_FIREBASE_MEASUREMENT_ID = "[YOUR-MEASUREMENT-ID]"
 ```
 * _... and replace all the placeholders including their brackets with your database information._
+* _Then navigate to the Authentication tab on your Firebase console and select `Email/password` as the sign-in method to enable._
 * _Run `npm run start` from the terminal to build the project and start a live development server._
 * _Navigate to `localhost:3000` in your favorite web browser to enjoy the project. (this part should happen automatically)_
 
@@ -48,6 +49,7 @@ REACT_APP_FIREBASE_MEASUREMENT_ID = "[YOUR-MEASUREMENT-ID]"
 
 * _Currently when you edit a game, submitting the changes returns you to the game detail for that game without changing anything displayed, you have to exit out to the list and return to the game to see the updates._
 * _Joining or leaving a game does not visibly update the players section of a game detail, you must navigate to a different part of the site before seeing the update._
+* _The project is not currently hosted live anywhere._
 
 ## License - [MIT](https://opensource.org/licenses/MIT)
 
