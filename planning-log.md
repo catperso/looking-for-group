@@ -56,3 +56,5 @@
 * 3:30pm - smol break
 * 4:00pm - update component-diagram.png
 * 5:00pm - finish up for the day
+## Thursday, 03/10
+* 8:30am - game day! time to set up some database entries
