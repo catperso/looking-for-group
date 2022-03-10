@@ -36,3 +36,8 @@ code {
   margin: 0;
   font-size: x-large;
 }
+
+.dunginLogo {
+  float: right;
+  width: 30%;
+}
