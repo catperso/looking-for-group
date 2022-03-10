@@ -57,4 +57,6 @@
 * 4:00pm - update component-diagram.png
 * 5:00pm - finish up for the day
 ## Thursday, 03/10
-* 8:30am - game day! time to set up some database entries
+* 8:30am - game day! time to set up some example database entries
+* 10:00am - small styling and layout adjustments
+* 10:30am - presentation set up to make sure everything works
