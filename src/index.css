@@ -41,3 +41,7 @@ code {
   float: right;
   width: 30%;
 }
+
+.headerZone {
+  background-color: rgba(211, 161, 161, 0.534);
+}
