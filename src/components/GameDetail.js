@@ -8,6 +8,15 @@ function GameDetail(props){
   const { game, onClickingDelete } = props;
   let addPlayerStyle = null;
   let removePlayerStyle = {display: 'none'};
+  let maxPlayersReached = null;
+  let maxPlayerMessage = null;
+
+  if (game.gamePlayers.length === parseInt(game.gameMaxPlayers)) {
+    maxPlayersReached = true;
+    maxPlayerMessage = 'Maximum players reached'
+  } else {
+    maxPlayersReached = false;
+  }
 
   if ((props.currentUser === game.gameHost) || game.gamePlayers.includes(props.currentUser) || (props.currentUser === null)) {
     addPlayerStyle = {display: 'none'};
@@ -54,7 +63,9 @@ function GameDetail(props){
               return <li key={i}>{player}</li>
             })}
           </ul>
-          <button onClick={() => addPlayerToGame(props.currentUser)} className="btn btn-success" style={addPlayerStyle}>Join this game!</button>
+          <br/>
+          <p className="gameDetailTags">{maxPlayerMessage}</p>
+          <button onClick={() => addPlayerToGame(props.currentUser)} className="btn btn-success" style={addPlayerStyle} disabled={maxPlayersReached}>Join this game!</button>
           <button onClick={() => removePlayerFromGame(props.currentUser)} className='btn btn-danger' style={removePlayerStyle}>Leave this game!</button>
         </div>
       </div>
