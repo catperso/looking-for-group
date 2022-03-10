@@ -54,3 +54,4 @@
 * 11:30am - lunch time
 * 12:30pm - back on the grind
 * 3:30pm - smol break
+* 4:00pm - update component-diagram.png
