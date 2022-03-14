@@ -44,7 +44,7 @@ function SignIn(props){
       <div className="row">
         <div className="col-6">
         <h1>Sign up</h1>
-        <form onSubmit={doSignUp} className="form-control">
+        <form onSubmit={doSignUp} className="form-control signInForm">
           <input
             type='text'
             name='email'
@@ -60,7 +60,7 @@ function SignIn(props){
         </div>
         <div className="col-6">
         <h1>Sign In</h1>
-        <form onSubmit={doSignIn} className="form-control">
+        <form onSubmit={doSignIn} className="form-control signInForm">
           <input
             type='text'
             name='signinEmail'

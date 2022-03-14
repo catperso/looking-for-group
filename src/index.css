@@ -51,4 +51,9 @@ code {
   border-style: inset;
   margin: 5px;
   border-color: red;
+  background-color: rgba(131, 131, 65, 0.137);
+}
+
+.signInForm {
+  background-color: rgba(255, 255, 255, 0.37);
 }
