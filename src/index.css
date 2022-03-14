@@ -5,6 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: url('./img/parchmentBackground.jpg');
 }
 
 code {
@@ -26,7 +27,7 @@ code {
 }
 
 .gameDetailPlayerList {
-  background-color: aliceblue;
+  background-color: rgba(240, 248, 255, 0.596);
   text-align: center;
 }
 
@@ -44,4 +45,10 @@ code {
 
 .headerZone {
   background-color: rgba(211, 161, 161, 0.534);
+}
+
+.gameListGameDiv {
+  border-style: inset;
+  margin: 5px;
+  border-color: red;
 }
