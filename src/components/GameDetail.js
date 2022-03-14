@@ -30,15 +30,17 @@ function GameDetail(props){
     const propertiesToUpdate = {
       gamePlayers: arrayUnion(player)
     }
-    return firestore.update({collection: 'games', doc: game.id }, propertiesToUpdate);
+    return firestore.update({collection: 'games', doc: game.id }, propertiesToUpdate).then(props.onChangingPlayers(game.id));
   }
 
   function removePlayerFromGame(player) {
     const propertiesToUpdate = {
       gamePlayers: arrayRemove(player)
     }
-    return firestore.update({collection: 'games', doc: game.id }, propertiesToUpdate);
+    return firestore.update({collection: 'games', doc: game.id }, propertiesToUpdate).then(props.onChangingPlayers(game.id));
   }
+
+
 
   return (
     <React.Fragment>
@@ -77,7 +79,8 @@ GameDetail.propTypes = {
   game: PropTypes.object,
   onClickingDelete: PropTypes.func,
   onClickingEdit: PropTypes.func,
-  currentUser: PropTypes.string
+  currentUser: PropTypes.string,
+  onChangingPlayers: PropTypes.func
 }
 
 export default GameDetail;

@@ -100,7 +100,8 @@ class GameControl extends React.Component {
         currentlyVisibleState = <GameDetail game={this.state.selectedGame}
                                             onClickingDelete={this.handleDeletingGame}
                                             onClickingEdit={this.handleEditClick}
-                                            currentUser={gameDetailCurrentUser} />;
+                                            currentUser={gameDetailCurrentUser}
+                                            onChangingPlayers={this.handleChangingSelectedGame} />;
         buttonText = "Return to All Games";
         buttonClass = "btn btn-warning";
       } else if (this.props.formVisibleOnPage) {
