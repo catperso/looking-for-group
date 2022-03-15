@@ -47,7 +47,6 @@ REACT_APP_FIREBASE_MEASUREMENT_ID = "[YOUR-MEASUREMENT-ID]"
 
 ## Known Bugs
 
-* _Currently when you edit a game, submitting the changes returns you to the game detail for that game without changing anything displayed, you have to exit out to the list and return to the game to see the updates._
 * _The project is not currently hosted live anywhere._
 
 ## License - [MIT](https://opensource.org/licenses/MIT)

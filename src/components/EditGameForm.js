@@ -15,9 +15,10 @@ function EditGameForm(props) {
       gameDescription: event.target.gameDescription.value || game.gameDescription,
       gameTags: event.target.gameTags.value.split(' ') || game.gameTags,
       gameTime: event.target.gameTime.value || game.gameTime,
-      gameLink: event.target.gameLink.value || game.gameLink
+      gameLink: event.target.gameLink.value || game.gameLink,
+      gameMaxPlayers: event.target.gameMaxPlayers.value || game.gameMaxPlayers
     }
-    return firestore.update({collection: 'games', doc: game.id }, propertiesToUpdate);
+    return firestore.update({collection: 'games', doc: game.id }, propertiesToUpdate).then(props.onUpdatingGame(game.id));
   }
 
   return (
@@ -38,7 +39,8 @@ function EditGameForm(props) {
 
 EditGameForm.propTypes = {
   game: PropTypes.object,
-  onEditGame: PropTypes.func
+  onEditGame: PropTypes.func,
+  onUpdatingGame: PropTypes.func
 }
 
 export default EditGameForm;

@@ -97,7 +97,7 @@ class GameControl extends React.Component {
         disabledText = null;
       }
       if (this.state.editing) {
-        currentlyVisibleState = <EditGameForm game={this.state.selectedGame} onEditGame={this.handleEditingGame} />;
+        currentlyVisibleState = <EditGameForm game={this.state.selectedGame} onEditGame={this.handleEditingGame} onUpdatingGame={this.handleChangingSelectedGame} />;
         buttonText = "Return to All Games";
         buttonClass = "btn btn-warning";
       } else if (this.state.selectedGame != null) {
