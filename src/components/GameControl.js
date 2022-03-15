@@ -76,10 +76,14 @@ class GameControl extends React.Component {
     let buttonDisabled = true;
     let buttonClass = null;
     let disabledText = "You must be signed in to add a game";
+    let signedInUserText = "You are not currently signed in";
     const auth = this.props.firebase.auth();
     let gameDetailCurrentUser = null;
 
-    if (auth.currentUser) gameDetailCurrentUser = auth.currentUser.email;
+    if (auth.currentUser) {
+      gameDetailCurrentUser = auth.currentUser.email;
+      signedInUserText = `You are currently signed in as: ${gameDetailCurrentUser}`;
+    }
 
     if (!isLoaded(auth)) {
       return(
@@ -117,6 +121,7 @@ class GameControl extends React.Component {
 
     return(
       <React.Fragment>
+        <p className='signedInStatus'>{signedInUserText}</p>
         {currentlyVisibleState}
         <p><em>{disabledText}</em></p>
         <button onClick={this.handleClick} className={buttonClass} disabled={buttonDisabled}>{buttonText}</button>
