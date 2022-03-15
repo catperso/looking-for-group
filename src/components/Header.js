@@ -9,7 +9,7 @@ function Header(){
       <img src={dungindragons} alt='a logo' className="dunginLogo" />
       <h1>Looking For Group</h1>
       <h2>DND Session Coordinator</h2>
-      <NavLink to='/' className="btn btn-info">Games List</NavLink>
+      <NavLink to='/games' className="btn btn-info" activeClassName="disabled">Games List</NavLink>
       <NavLink to='/signin' className="btn btn-warning" activeClassName="disabled">Sign In/Up/Out</NavLink>
       <hr/>
       </div>
